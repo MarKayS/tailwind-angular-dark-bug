@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+let darkPlugin = require('./dark-fix-plugin');
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -7,6 +10,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    darkPlugin
+  ],
 }
 
